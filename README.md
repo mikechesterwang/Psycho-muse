@@ -1,4 +1,4 @@
 # Psycho-muse
-Generated Design Couse Assignment. Using Processing.
+Generated Design Course Assignment. Using Processing.
 
 ![](Psycho/data/back.jpg)
