@@ -1,4 +1,4 @@
-
+static final int show_guitar = -1;
 static final int show_statup = 0; 
 static final int show_divein = 1; 
 static final int show_bomber = 2; 
@@ -7,10 +7,14 @@ static final int show_network = 4;
 static final int show_computer = 5;
 static final int show_robot = 6;
 static final int show_dommsday = 7;
+static final int show_subway = 8;
+static final int show_building = 9;
 
 void pop(){
   if(show == show_robot){
         robot_pop(); 
+  }else if(show == show_guitar){
+        guitar_pop(); 
   }
 }
 
@@ -19,6 +23,8 @@ void drop(){
         bomber_drop(); 
     }else if(show == show_robot){
         robot_drop(); 
+    }else if(show == show_guitar){
+        guitar_drop(); 
     }
 }
 
