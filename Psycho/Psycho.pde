@@ -3,8 +3,8 @@ boolean record = false;
 
 
 int last_show = 0;
-//int show = 0;
-int show = show_building;
+int show = 0;
+//int show = show_walk;
 
 void setup(){
   frameRate(30);
@@ -12,7 +12,7 @@ void setup(){
   startup_init();
   divein_init();
   bomber_init();
-  //cigarette_init();
+  cigarette_init();
   network_init();
   computer_init();
   robot_init();
@@ -21,6 +21,8 @@ void setup(){
   subway_init();
   guitar_init();
   building_init();
+  gunman_init();
+  walk_init();
 }
 
 void nextShow(int nextShowNumber){
@@ -51,6 +53,10 @@ void draw(){
       guitar(); 
   }else if(show == show_building){
       building(); 
+  }else if(show == show_gunman){
+      gunman(); 
+  }else if(show == show_walk){
+      walk(); 
   }
    
 }

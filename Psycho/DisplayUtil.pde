@@ -9,6 +9,8 @@ static final int show_robot = 6;
 static final int show_dommsday = 7;
 static final int show_subway = 8;
 static final int show_building = 9;
+static final int show_gunman = 10;
+static final int show_walk = 11;
 
 void pop(){
   if(show == show_robot){
